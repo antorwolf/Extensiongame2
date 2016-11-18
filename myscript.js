@@ -66,11 +66,11 @@ function updateOutput(){
 	walletDisp.innerHTML = dispNumb(wallet)+"$";
 	upgradeCashButton.innerHTML = "Up to " +(dispNumb(getCashUpgrade())) +
     " for "+ dispNumb(costOfCashUpgrade())+ "$";
-    upgradeCloudButton.innerHTML = "Add dark matter exhaust?"+dispNumb(costOfCloudUpgrade())+"$";
+    upgradeCloudButton.innerHTML = "Add random?"+dispNumb(costOfCloudUpgrade())+"$";
     if(clicked==true){
         button.innerHTML = "Bonus: x "+ bonus;
     }else{
-        button.innerHTML = "Overload atomic reactor";
+        button.innerHTML = "Overload randomness";
     }
     if(wallet>=costOfCashUpgrade()){
         upgradeCashButton.style.background='black';
@@ -147,6 +147,30 @@ function dispNumb(number){
     }else if(long<16){
         temp = Math.round(number/10000000000)/100;
         ending = "T";
+    }else if(long<19){
+        temp = Math.round(number/10000000000000)/100;
+        ending = "Q"; 
+    }else if(long<22){
+        temp = Math.round(number/1000000000000000)/100;
+        ending = "Quin"; 
+    }else if(long<25){
+        temp = Math.round(number/1000000000000000000)/100;
+        ending = "S"; 
+    }else if(long<28){
+        temp = Math.round(number/1000000000000000000000)/100;
+        ending = "Sep"; 
+    }else if(long<31){
+        temp = Math.round(number/1000000000000000000000000)/100;
+        ending = "O"; 
+    }else if(long<34){
+        temp = Math.round(number/1000000000000000000000000000)/100;
+        ending = "N";
+    }else if(long<37){
+        temp = Math.round(number/1000000000000000000000000000000)/100;
+        ending = "V";
+    }else if(long<40){
+        temp = Math.round(number/1000000000000000000000000000000000)/100;
+        ending = "U";
     }
     temp = parseFloat(temp).toFixed(2);
     return temp + " " +ending;
