@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "res/icon16.png",
+      "default_popup": "pop.html"
+   },
+
+   "description": "Become rich in plasma",
+   "icons": {
+      "128": "res/icon128s.png",
+      "16": "res/icon16.png",
+      "48": "res/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "Futuristic plasma money",
+   "permissions": [ "storage", "notifications" ],
+   "short_name": "Plasma $",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
