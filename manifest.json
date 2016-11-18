@@ -4,16 +4,16 @@
       "default_popup": "pop.html"
    },
 
-   "description": "Become rich in plasma",
+   "description": "Become rich in randomness",
    "icons": {
       "128": "res/icon128s.png",
       "16": "res/icon16.png",
       "48": "res/icon48.png"
    },
    "manifest_version": 2,
-   "name": "Futuristic plasma money",
+   "name": "RANDOM money",
    "permissions": [ "storage", "notifications" ],
-   "short_name": "Plasma $",
+   "short_name": "RANDOM $",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0"
 }
